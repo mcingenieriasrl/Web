@@ -161,4 +161,93 @@ color: aquamarine;
 .logosimg {
     width: 100%;
     padding: 15px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    header > .parte_tit1,
+    header > .parte_tit2 {
+        margin: 5px 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > .parte_tit1 > img,
+    header > .parte_tit2 > img {
+        width: 80%;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    nav > div {
+        margin: 5px 0;
+    }
+
+    .cuerpo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_pres {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        float: none;
+        box-shadow: none;
+    }
+
+    .slider {
+        width: 90%;
+        height: 380px; /* Mantiene la altura para la animación */
+        margin: 20px 0;
+        float: none;
+    }
+
+    .lista_slider {
+        width: 2400px; /* Necesario para mantener la animación */
+        flex-direction: row;
+        animation: slide 12s infinite;
+    }
+
+    .slide {
+        width: 460px;
+    }
+
+    .desc_slide {
+        width: 140px;
+        font-size: 18px;
+    }
+
+    .Qsomos {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logosimg {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        position: static;
+        margin: 10px 0 0 0;
+    }
 }
